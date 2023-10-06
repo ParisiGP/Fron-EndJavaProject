@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Project</title>
+</head>
+<body>
+<h1>User Get</h1>
+
+    <button onclick="RequestUsers()">Teste Get Users</button>
+    <div id="UserInformations">
+
+    </div>
+
+    <br><br><br>
+<label>Id para request <br/>
+    <input id="IdUsers" type="number">
+    <button onclick="RequestUsersById()">Teste</button>
+
+    <div id="UserIdInfo"></div>
+</label>
+
+<h1>Formulário POST</h1>
+<form id="myForm">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="DepartmentId">Departamento:</label><br>
+  <input type="number" id="DepartmentId" name="department" required><br><br>
+  
+  <button type="submit">Enviar</button>
+</form>
+
+
+<h1>Editar Usuário</h1>
+<form id="editForm">
+    <label for="userId">ID do Usuário:</label><br>
+    <input type="number" id="userId" name="userId" required><br><br>
+  
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name2" name="name" required><br><br>
+  
+    <label for="email">Email:</label><br>
+    <input type="email" id="email2" name="email" required><br><br>
+  
+    <label for="department">Departamento ID:</label><br>
+    <input type="number" id="department2" name="department" required><br><br>
+  
+    <button type="button" onclick="submitEditForm()">Enviar</button>
+  </form>
+
+
+
+    
+</body>
+<script src="RequestHTTP.js"></script>
+<script src="Testes.js"></script>
+</html>
