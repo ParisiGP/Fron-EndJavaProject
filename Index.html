@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Project</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+
+<div id="conteiner">
+
 <h1>User Get</h1>
 
     <button onclick="RequestUsers()">Teste Get Users</button>
+    <button onclick="ClearUsers()">Clear</button>
     <div id="UserInformations">
 
     </div>
 
-    <br><br><br>
 <label>Id para request <br/>
     <input id="IdUsers" type="number">
     <button onclick="RequestUsersById()">Teste</button>
@@ -54,6 +58,7 @@
   </form>
 
 
+</div>
 
     
 </body>

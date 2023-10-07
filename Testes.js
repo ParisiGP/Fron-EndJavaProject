@@ -21,6 +21,11 @@ function RequestUsers() {
   console.log(Users);
 }
 
+function ClearUsers() {
+  let UserDiv = document.getElementById('UserInformations');
+  UserDiv.innerHTML = '';
+}
+
 function RequestUsersById() {
 
   let Id = document.getElementById('IdUsers').value;
